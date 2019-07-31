@@ -30,7 +30,6 @@ export class AppController {
         });
       } catch (error) {
         this.logger.log(`Error in send - ${JSON.stringify(error)}`);
-        // errors.internalServiceError(`Error : ${error}`, error);
       }
     });
   }
@@ -82,7 +81,6 @@ export class AppController {
         });
       } catch (error) {
         this.logger.log(`Error in send - ${JSON.stringify(error)}`);
-        // errors.internalServiceError(`Error : ${error}`, error);
       }
     });
   }
