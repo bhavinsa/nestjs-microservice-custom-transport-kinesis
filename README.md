@@ -6,7 +6,7 @@ nestjs-microservice-custom transport-kinesis
 ## Installation
 
 ```bash
-$ git clone 
+$ git clone https://github.com/bhavinsa/nestjs-microservice-custom-transport-kinesis.git
 $ npm install
 ```
 
