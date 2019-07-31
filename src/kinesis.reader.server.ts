@@ -13,6 +13,7 @@ export class KinesisReaderServer extends Server implements CustomTransportStrate
   }
 
   public async listen(callback: () => void) {
+    this.logger.debug(`listen`);
     await this.init();
     this.server
       .on('data', records => {
@@ -24,7 +25,6 @@ export class KinesisReaderServer extends Server implements CustomTransportStrate
             this.handleMessage(data);
           }
         }
-        callback();
       })
       .on('checkpoint', sequenceNumber => {
         this.logger.debug(`checkpoint - ${sequenceNumber}`);
